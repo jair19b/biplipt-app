@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
+    "@reduxjs/toolkit": "^1.9.3",
     "@types/apollo-upload-client": "^17.0.2",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
@@ -21,6 +22,8 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
     "typescript": "4.9.5"
   }
 }
