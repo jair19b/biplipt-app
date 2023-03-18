@@ -10,8 +10,6 @@ export const defaultSystemState: SystemState = {
       facebook: false,
       google: false,
       apple: false,
-      locale: "es-US",
-      dir: "ltr",
       version: "0.1.0"
    },
    page: {
@@ -20,6 +18,8 @@ export const defaultSystemState: SystemState = {
       description: "biplipt"
    },
    loggedIn: false,
+   dir: "ltr",
+   locale: "es-US",
    user: null,
    locales: [
       {

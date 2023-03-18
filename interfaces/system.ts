@@ -7,8 +7,6 @@ export interface AppState {
    facebook: boolean;
    google: boolean;
    apple: boolean;
-   locale: string;
-   dir: string;
    version: string;
 }
 
@@ -36,6 +34,8 @@ export interface SystemState {
    app: AppState;
    page: PageState;
    loggedIn: boolean;
+   dir: string;
+   locale: string;
    user: UserState | null;
    locales: Locale[];
 }
