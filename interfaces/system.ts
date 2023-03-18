@@ -39,3 +39,9 @@ export interface SystemState {
    user: UserState | null;
    locales: Locale[];
 }
+
+export interface LanguageContextI {
+   changeLanguage: any;
+   locale: string;
+   locales: Locale[];
+}

@@ -1,4 +1,4 @@
-import { SystemState } from "@/interfaces/system";
+import { LanguageContextI, SystemState } from "@/interfaces";
 
 export const defaultSystemState: SystemState = {
    app: {
@@ -27,4 +27,10 @@ export const defaultSystemState: SystemState = {
          locale: "es-US"
       }
    ]
+};
+
+export const defaultLanguegeContext: LanguageContextI = {
+   changeLanguage: null,
+   locale: "es-US",
+   locales: [{ locale: "es-us", name: "Español" }]
 };

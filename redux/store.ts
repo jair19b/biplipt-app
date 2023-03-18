@@ -8,4 +8,4 @@ export const store = configureStore({
    }
 });
 
-// export type StoreState = ReturnType<typeof store.getState>;
+export type StoreState = ReturnType<typeof store.getState>;
