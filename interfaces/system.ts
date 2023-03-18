@@ -45,3 +45,12 @@ export interface LanguageContextI {
    locale: string;
    locales: Locale[];
 }
+
+export interface AppContextI {
+   systemRoot: SystemState;
+   systemLoading: boolean;
+   systemError: boolean | any;
+   systemRefetch: any;
+   login: any;
+   logout: any;
+}
