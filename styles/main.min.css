@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrollbar-none::-webkit-scrollbar {
+   display: none;
+}
+
+.gradient-home {
+   background: linear-gradient(90deg, #c31432 0.83%, #240b36 100%);
+}
