@@ -2,14 +2,14 @@ import React, { useEffect, createContext, useContext } from "react";
 import { useQuery } from "@apollo/client";
 import { useDispatch, useSelector } from "react-redux";
 
-import AppError from "../components/AppError";
-import HtmlHead from "../components/HtmlHead";
+import AppError from "./components/AppError";
+import HtmlHead from "./components/HtmlHead";
 import { LanguageContext } from "@/language/languageContext";
 import { LanguageContextI, SystemState, UserState, AppContextI } from "@/interfaces";
 import { login, logout, setSystem } from "@/redux/slices/appSlice";
 import type { StoreState } from "@/redux/store";
 import { GET_SYSTEM } from "@/graphql/queries/system";
-import ProgressBar from "../components/ProgressBar";
+import ProgressBar from "./components/ProgressBar";
 
 /** Contexto del modulo principal de la aplicación */
 export const AppContext = createContext<AppContextI | null>(null);

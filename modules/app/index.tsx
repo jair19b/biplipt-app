@@ -1,6 +1,13 @@
 import React from "react";
-import AppProvider from "./contexts/AppContext";
+
+import AppProvider from "./AppContext";
+import Header from "@/components/Header";
 
 export default function AppModule({ children }: any) {
-   return <AppProvider>{children}</AppProvider>;
+   return (
+      <AppProvider>
+         <Header />
+         {children}
+      </AppProvider>
+   );
 }
