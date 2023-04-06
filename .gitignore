@@ -15,6 +15,10 @@
 # production
 /build
 
+# static files
+/public/storage
+/sass
+
 # misc
 .DS_Store
 *.pem
