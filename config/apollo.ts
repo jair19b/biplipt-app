@@ -18,7 +18,8 @@ const authMiddleware = new ApolloLink((operation, forward) => {
             ...headers,
             locale: window.navigator.language,
             lang: lang,
-            authorization: token
+            authorization: token,
+            "Access-Control-Allow-Origin": "*"
          }
       };
    });
