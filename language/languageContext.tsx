@@ -23,7 +23,7 @@ const LanguageProvider = ({ children }: any) => {
    const [langMessages, setLangMessages] = useState(defaultMessages);
 
    // Validacion del estado de la  aplicación global
-   const lang = useSelector<StoreState, string>((state) => state.system.app.locale);
+   const lang = useSelector<StoreState, string>((state) => state.system.locale);
    const locales = useSelector<StoreState, Locale[]>((state) => state.system.locales);
    const dispatch = useDispatch();
 
@@ -31,8 +31,8 @@ const LanguageProvider = ({ children }: any) => {
    const changeLanguage = (nuevoLang: string) => {
       if (nuevoLang !== lang && nuevoLang !== defaultLocale) {
          const cache = localStorage.getItem(nuevoLang) || "";
-         const time = JSON.parse(cache)?.date;
-         if (!cache || time - now() > 86400) {
+         // const time = JSON.parse(cache)?.date;
+         if (!cache || 10909 - now() > 86400) {
             axios
                .get(`${process.env.NEXT_PUBLIC_SERVER_PATH}/data/language/?locale=${nuevoLang}`)
                .then((res) => {

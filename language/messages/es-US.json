@@ -1,8 +1,16 @@
 {
-   "uhsi.placeholder": "Buscar letras, álbumes, géneros y artistas",
-   "uhabr.value": "Crear Cuenta",
-   "uhabl.value": "Login",
+   "header.inicio": "Inicio",
+   "header.artistas": "Artistas",
+   "header.albumes": "Álbumes",
+   "header.generos": "Generos",
+   "header.contribuir": "Contribuir",
+   "header.crearCuenta": "Crear Cuenta",
+   "header.iniciarSesion": "Iniciar Sesión",
    "uddst.title": "Compartir",
+
+   "home.topMasAccedidos": "Top más accedidos",
+
+   "uhsi.placeholder": "Buscar letras, álbumes, géneros y artistas",
 
    "meta.login.title": "Iniciar Sesión",
    "meta.login.description": "Inicio de sesión en Biplipt",
@@ -65,6 +73,8 @@
    "lnddvt.title": "Traducciones",
    "lnddiav.text": "Agregar una versión",
    "lnddio.text": "Original",
+
+   "app.buscarEnBiplipt": "Buscar en Biplipt",
 
    "lnobv.value": "Versiones",
    "lnoba.value": "Alfabeto",
