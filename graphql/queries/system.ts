@@ -38,3 +38,27 @@ export const GET_SYSTEM = gql`
       }
    }
 `;
+
+export const GET_HOME = gql`
+   query getIndexData {
+      topWeekLyrics: getWeekLyricTop(limit: 10) {
+         lyric {
+            dns
+            title
+            artist {
+               name
+            }
+         }
+      }
+      topWeekAlbums: getWeekAlbumTop(limit: 6) {
+         album {
+            dns
+            name
+            cover
+            artist {
+               name
+            }
+         }
+      }
+   }
+`;
